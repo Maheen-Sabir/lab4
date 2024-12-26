@@ -51,7 +51,7 @@ def mod():
         if b == 0:
             return make_response('Division by zero\n', 400)
         save_last("mod",(a,b),a%b)
-        return make_response(jsonify(solution=a%b), 200)
+        return make_response(jsonify(s=a%b), 200)
     else:
         return make_response('Invalid input\n', 400)
 
